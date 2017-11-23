@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+</head>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background: #111;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+span {
+    flex-grow: 1;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    height: 100px;
+    flex-wrap: wrap;
+}
+
+.sign {
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 460px) {
+    nav a {
+        flex-basis: 25%;
+    }
+}
+</style>
+
+<body>
+    <nav>
+        <a href="#"><span>首页</span></a>
+        <a href="#"><span>代码</span></a>
+        <a href="#"><span>视频</span></a>
+        <a href="#"><span>课程</span></a>
+        <a href="#" class="sign sign_in"><span>登陆</span></a>
+        <a href="#" class="sign sign_up"><span>注册</span></a>
+    </nav>
+</body>
+
+</html>
